@@ -6,6 +6,22 @@ RSpec documentation:
 * [rspec-collection_matchers](https://github.com/rspec/rspec-collection_matchers)
 * [rspec-expectations](https://github.com/rspec/rspec-expectations)
 
+### Baby steps
+
+```sh
+cat ~/.railsrc
+  --skip-bundle
+  --no-test-framework
+  --skip-test-unit
+rails new my_movies
+cd my_movies/
+# add rspec-rails to Gemfile
+gem list rspec
+bundle install
+mv README.rdoc README.md
+rails g rspec:install
+```
+
 
 ### Things you may want to cover
 
