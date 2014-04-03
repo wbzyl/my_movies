@@ -28,7 +28,7 @@ rails g rspec:install
 * [wrappers libraries](https://www.themoviedb.org/documentation/api/wrappers-libraries)
 * [themoviedb](https://github.com/ahmetabdi/themoviedb) –
   a Ruby wrapper for the [The Movie Database API](http://docs.themoviedb.apiary.io/)
-* [ruby-tmdb]()
+* [ruby-tmdb](https://github.com/Irio/ruby-tmdb/)
   – an ActiveRecord-style API wrapper for TheMovieDB.org compatible with API v3
 
 
