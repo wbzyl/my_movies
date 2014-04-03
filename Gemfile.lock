@@ -165,5 +165,5 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spring
   sqlite3
-  themoviedb
+  themoviedb (= 0.0.21)
   uglifier (>= 1.3.0)
