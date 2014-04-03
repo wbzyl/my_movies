@@ -6,7 +6,7 @@ RSpec documentation:
 * [rspec-collection_matchers](https://github.com/rspec/rspec-collection_matchers)
 * [rspec-expectations](https://github.com/rspec/rspec-expectations)
 
-### Baby steps
+### fc -l -10
 
 ```sh
 cat ~/.railsrc
@@ -15,14 +15,14 @@ cat ~/.railsrc
   --skip-test-unit
 rails new my_movies
 cd my_movies/
-# add rspec-rails, capybara, database_cleaner to Gemfile
+# add rspec-rails, capybara, database_cleaner, and themoviedb gems to Gemfile
 gem list rspec
 bundle install
 mv README.rdoc README.md
 rails g rspec:install
 ```
 
-# The Movie Database API
+### The Movie Database API
 
 * [Movie & TV API Overview](https://www.themoviedb.org/documentation/api)
 * [wrappers libraries](https://www.themoviedb.org/documentation/api/wrappers-libraries)
@@ -30,7 +30,7 @@ rails g rspec:install
   a Ruby wrapper for the [The Movie Database API](http://docs.themoviedb.apiary.io/)
 
 
-### Things you may want to cover
+## Things you may want to cover
 
 This README would normally document whatever steps are necessary to
 get the application up and running:
