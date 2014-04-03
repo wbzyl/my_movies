@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+
+require 'themoviedb'
+include Tmdb
+
+# put the key into env:
+#
+#   source ~/bin/TheMovieDBAPI
+#   echo $TMDB_API_KEY
+#
+API_KEY = ENV['TMDB_API_KEY']
+
+puts "API KEY: #{API_KEY}"
+
+Api.key(API_KEY)
+Api.language("en") # setup your default language
+
+movies = Movie.find("batman")
+
+m = movies[0]
+# puts m.class
+# puts m.methods
+puts "#batman movies found: #{movies.size}"
+
+puts m.original_title
+puts m.popularity
+puts m.poster_path
+puts m.vote_average
+puts m.vote_count
+
+puts "-"*44
+puts "the list of most popular movies"
+puts "-"*44
+puts Movie.now_playing[0..2]
+
+puts "="*44
+json = Oj.dump(m)
+puts json
