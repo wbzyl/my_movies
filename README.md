@@ -15,12 +15,22 @@ cat ~/.railsrc
   --skip-test-unit
 rails new my_movies
 cd my_movies/
-# add rspec-rails to Gemfile
+# add rspec-rails, capybara, database_cleaner to Gemfile
 gem list rspec
 bundle install
 mv README.rdoc README.md
 rails g rspec:install
 ```
+
+# The Movie Database API
+
+* [Movie & TV API Overview](https://www.themoviedb.org/documentation/api)
+* [wrappers libraries](https://www.themoviedb.org/documentation/api/wrappers-libraries)
+* [themoviedb](https://github.com/ahmetabdi/themoviedb) –
+  a Ruby wrapper for the [The Movie Database API](http://docs.themoviedb.apiary.io/)
+* [ruby-tmdb]()
+  – an ActiveRecord-style API wrapper for TheMovieDB.org compatible with API v3
+
 
 
 ### Things you may want to cover
