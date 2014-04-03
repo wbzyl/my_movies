@@ -22,7 +22,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'spring', group: :development
 
 group :development, :test do
-  gem 'rspec-rails', '= 3.0.0.beta2', group: :development
+  gem 'rspec-rails', '~> 3.0.0.beta', group: :development
   gem 'capybara', '= 2.2.1'
   gem 'database_cleaner', '= 1.2.0'
 end
