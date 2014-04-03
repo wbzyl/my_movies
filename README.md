@@ -1,4 +1,4 @@
-## README
+## MyMovies – sample app which uses TMDB API
 
 RSpec documentation:
 
