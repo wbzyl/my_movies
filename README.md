@@ -29,6 +29,42 @@ rails g rspec:install
 * [themoviedb](https://github.com/ahmetabdi/themoviedb) –
   a Ruby wrapper for the [The Movie Database API](http://docs.themoviedb.apiary.io/)
 
+Example:
+
+```sh
+bin/tmdb
+```
+
+### fc -l -4
+
+```sh
+rails g controller Home index
+rails g controller Search index
+rails g controller Movies show
+rails g controller People show
+```
+
+### Initializers
+
+```ruby
+Tmdb::Api.key(ENV['TMDB_API_KEY'])
+Tmdb::Api.language("en")           # setup your default language
+```
+
+### Routing
+
+```ruby
+Rails.application.routes.draw do
+  resources :movies, only: :show
+  resources :people, only: :show
+
+  match "search", to: "search#index", via: :get
+
+  # You can have the root of your site routed with "root"
+  root 'home#index'
+end
+```
+
 
 ## Things you may want to cover
 

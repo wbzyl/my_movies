@@ -31,3 +31,7 @@ end
 # gem 'ruby-tmdb'
 gem 'themoviedb', '= 0.0.21'
 gem 'oj'
+
+gem 'turbolinks'
+gem 'quiet_assets'
+gem 'awesome_print'
